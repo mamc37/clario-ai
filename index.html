@@ -262,44 +262,6 @@
     }
     .how-step p { font-size: 14px; color: var(--ink2); }
 
-    /* ── MODES ── */
-    .modes-section { background: var(--ink); }
-    .modes-section .section-title { color: #fff; }
-    .modes-section .section-label { color: rgba(91,84,232,0.8); }
-    .modes-section .section-sub { color: rgba(255,255,255,0.5); }
-    .modes-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px; margin-top: 48px;
-    }
-    .mode-card {
-      background: rgba(255,255,255,0.04); border-radius: var(--radius);
-      padding: 24px 20px; border: 1px solid rgba(255,255,255,0.07);
-      transition: background 0.2s, transform 0.2s;
-    }
-    .mode-card:hover { background: rgba(255,255,255,0.07); transform: translateY(-2px); }
-    .mode-icon-wrap {
-      width: 40px; height: 40px; border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 18px; margin-bottom: 14px;
-    }
-    .mode-card h3 {
-      font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700;
-      color: #fff; margin-bottom: 6px;
-    }
-    .mode-card p { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.5; }
-    .mode-pro {
-      display: inline-block; font-size: 9px; font-weight: 700;
-      letter-spacing: 0.06em; text-transform: uppercase;
-      background: var(--accent-soft); color: var(--accent);
-      padding: 2px 7px; border-radius: 100px; margin-top: 10px;
-    }
-    .mode-free {
-      display: inline-block; font-size: 9px; font-weight: 700;
-      letter-spacing: 0.06em; text-transform: uppercase;
-      background: rgba(22,163,74,0.15); color: #4ade80;
-      padding: 2px 7px; border-radius: 100px; margin-top: 10px;
-    }
-
     /* ── PRICING ── */
     .pricing-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -348,22 +310,6 @@
     }
     .pricing-features li.no::before { content: '✕'; color: var(--ink3); }
     .pricing-features li.no { color: var(--ink3); }
-    .pricing-btn {
-      display: block; width: 100%; text-align: center;
-      margin-top: 24px; padding: 14px;
-      border-radius: 12px; font-size: 15px; font-weight: 700;
-      text-decoration: none; transition: transform 0.15s, opacity 0.15s;
-      cursor: pointer; border: none; font-family: 'DM Sans', sans-serif;
-    }
-    .pricing-btn:hover { transform: translateY(-1px); opacity: 0.92; }
-    .pricing-btn-primary { background: var(--accent); color: #fff; }
-    .pricing-btn-secondary {
-      background: var(--bg2); color: var(--ink2);
-      border: 1px solid var(--border);
-    }
-    .pricing-note {
-      text-align: center; font-size: 13px; color: var(--ink3); margin-top: 20px;
-    }
 
     /* ── SCANNER FEATURE ── */
     .scanner-section {
@@ -402,31 +348,6 @@
     }
     .scanner-visual p { font-size: 14px; color: var(--ink2); }
 
-    /* ── TESTIMONIALS ── */
-    .testimonials-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 16px; margin-top: 48px;
-    }
-    .testimonial-card {
-      background: var(--white); border-radius: var(--radius);
-      padding: 24px; border: 1px solid var(--border); box-shadow: var(--shadow);
-    }
-    .testimonial-stars { font-size: 14px; margin-bottom: 12px; color: #f59e0b; }
-    .testimonial-text {
-      font-size: 15px; color: var(--ink2); line-height: 1.65;
-      margin-bottom: 16px; font-style: italic;
-    }
-    .testimonial-author {
-      display: flex; align-items: center; gap: 10px;
-    }
-    .author-avatar {
-      width: 36px; height: 36px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 16px; background: var(--accent-soft);
-    }
-    .author-name { font-size: 14px; font-weight: 600; color: var(--ink); }
-    .author-role { font-size: 12px; color: var(--ink3); }
-
     /* ── CTA ── */
     .cta-section {
       background: var(--ink); text-align: center; padding: 96px 24px;
@@ -437,21 +358,6 @@
       letter-spacing: -0.02em;
     }
     .cta-section p { font-size: 18px; color: rgba(255,255,255,0.5); margin-bottom: 40px; }
-    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-    .btn-white {
-      background: #fff; color: var(--ink);
-      font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 600;
-      padding: 14px 28px; border-radius: 12px; text-decoration: none;
-      transition: transform 0.15s;
-    }
-    .btn-white:hover { transform: translateY(-1px); }
-    .btn-ghost {
-      background: transparent; color: rgba(255,255,255,0.6);
-      font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500;
-      padding: 14px 28px; border-radius: 12px; text-decoration: none;
-      border: 1px solid rgba(255,255,255,0.15); transition: border-color 0.15s;
-    }
-    .btn-ghost:hover { border-color: rgba(255,255,255,0.3); }
 
     /* ── FOOTER ── */
     footer {
@@ -499,13 +405,13 @@
 
 <!-- ── NAV ── -->
 <nav>
-  <a href="/" class="nav-logo">Clario<span>.</span></a>
+  <a href="index.html" class="nav-logo">Clario<span>.</span></a>
   <div class="nav-links">
     <a href="#features">Features</a>
     <a href="#how">How it works</a>
     <a href="#pricing">Pricing</a>
-    <a href="/privacy.html">Privacy</a>
-    <a href="/terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
     <a href="#pricing" class="nav-cta">Get Started</a>
   </div>
 </nav>
@@ -742,8 +648,6 @@
   <section class="cta-section">
     <h2>Start understanding<br/>more today.</h2>
     <p>Free to download. No credit card. Ready in 30 seconds.</p>
-    <div class="cta-btns">
-    </div>
   </section>
 
 </div><!-- end main-content -->
@@ -751,12 +655,12 @@
 <!-- ── FOOTER ── -->
 <footer>
   <div class="footer-inner">
-    <a href="/" class="footer-logo">Clario<span>.</span></a>
+    <a href="index.html" class="footer-logo">Clario<span>.</span></a>
     <div class="footer-links">
       <a href="#features">Features</a>
       <a href="#pricing">Pricing</a>
-      <a href="/privacy.html">Privacy Policy</a>
-      <a href="/terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
       <a href="mailto:magicjames9star@gmail.com">Contact</a>
     </div>
   </div>
